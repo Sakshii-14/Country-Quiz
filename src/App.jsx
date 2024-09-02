@@ -35,7 +35,7 @@ function App() {
   }, [list, dispatch]);
 
   useEffect(()=>{
-    console.log("inside img1")
+    
    const img1=new Image();
    const img2=new Image();
     img1.src=check;
