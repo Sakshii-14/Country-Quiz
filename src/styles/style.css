@@ -1,0 +1,7 @@
+.selected{
+    background: linear-gradient(to right, #E65895, #BC6BE8);
+}
+
+.emoji-text{
+    font-family: 'Noto Color Emoji', sans-serif;
+}
