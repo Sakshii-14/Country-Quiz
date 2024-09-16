@@ -11,7 +11,8 @@ import { useNavigate } from "react-router-dom";
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale-extreme.css';
-import 'tippy.js/themes/light.css'; // Specific theme styles (if using a predefined theme)
+import 'tippy.js/themes/light.css';
+import Loader from "./components/Loader";
 
 
 function App() {
@@ -82,7 +83,7 @@ function App() {
   }, [numbers, checkComplete]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Container><Loader/></Container>;
   }
 
   if (error) {
